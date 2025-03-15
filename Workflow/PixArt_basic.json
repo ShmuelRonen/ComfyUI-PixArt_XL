@@ -1,0 +1,227 @@
+{
+  "last_node_id": 25,
+  "last_link_id": 40,
+  "nodes": [
+    {
+      "id": 25,
+      "type": "PA_Generation",
+      "pos": [
+        60.64082717895508,
+        986.4546508789062
+      ],
+      "size": [
+        400,
+        310
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "PAMODEL",
+          "link": 39
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 40
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            38
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PA_Generation"
+      },
+      "widgets_values": [
+        "",
+        "",
+        1024,
+        1024,
+        20,
+        4.5,
+        "SA-Solver",
+        403687764691985,
+        "randomize"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "SaveImage",
+      "pos": [
+        516.1909790039062,
+        985.5910034179688
+      ],
+      "size": [
+        692.945068359375,
+        587.2677612304688
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 38
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "PixArt/a"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "PA_BaseModelLoader_fromhub",
+      "pos": [
+        -340.8170471191406,
+        875.579345703125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "PAMODEL",
+          "links": [
+            39
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PA_BaseModelLoader_fromhub"
+      },
+      "widgets_values": [
+        "PixArt-alpha/PixArt-XL-2-1024-MS"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "MilehighStyler",
+      "pos": [
+        -422.69464111328125,
+        1009.3743286132812
+      ],
+      "size": [
+        400,
+        210
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "links": [
+            40
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "text_negative",
+          "type": "STRING",
+          "links": [
+            37
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_MileHighStyler",
+        "ver": "7b51cbb3366d772f99d6a69e9d759313456143f5",
+        "Node name for S&R": "MilehighStyler"
+      },
+      "widgets_values": [
+        "A man in the field",
+        "asymmetry, worst quality, low quality",
+        "no style",
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      37,
+      8,
+      1,
+      25,
+      2,
+      "STRING"
+    ],
+    [
+      38,
+      25,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      39,
+      24,
+      0,
+      25,
+      0,
+      "PAMODEL"
+    ],
+    [
+      40,
+      8,
+      0,
+      25,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9646149645000006,
+      "offset": [
+        799.297476214144,
+        -704.4747891940876
+      ]
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
