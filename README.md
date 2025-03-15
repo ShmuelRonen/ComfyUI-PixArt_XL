@@ -2,6 +2,9 @@
 
 A ComfyUI extension that integrates PixArt-Alpha models directly into ComfyUI with advanced memory management.
 
+![image](https://github.com/user-attachments/assets/9b489265-acc3-46e1-b8cb-f2b39017f1b3)
+
+
 ## Features
 
 - Use PixArt-Alpha XL models directly in ComfyUI
