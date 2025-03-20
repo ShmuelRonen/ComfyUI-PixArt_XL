@@ -1,5 +1,10 @@
 # ComfyUI-PixArt_XL
 
+## Support My Work
+If you find this project helpful, consider buying me a coffee:
+
+[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=shmuelronen&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/shmuelronen)
+
 A ComfyUI extension that integrates PixArt-Alpha models directly into ComfyUI with advanced memory management.
 
 ![image](https://github.com/user-attachments/assets/9b489265-acc3-46e1-b8cb-f2b39017f1b3)
